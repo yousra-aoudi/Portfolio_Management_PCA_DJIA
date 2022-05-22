@@ -219,7 +219,7 @@ print('weights \n',weights[0])
 
 """
 Let us now construct five portfolios, defining the weights of each stock as each of the first five principal 
-components. We then create a scatter-plot that visualizes an organized descending plot with the respec‐ tive weight of 
+components. We then create a scatter-plot that visualizes an organized descending plot with the respective weight of 
 every company at the current chosen principal component:
 """
 NumComponents = 5
