@@ -48,13 +48,13 @@ dji_stocks = ['UNH','GS','HD','MSFT','AMGN','MCD','CAT','V','HON','JNJ','TRV','C
 start_date = '2020-1-1'
 end_date = '2022-5-20'
 dataset = yf.download(dji_stocks,start=start_date,end=end_date)['Adj Close']
-dataset.to_csv('DJI_close_price_pandemic_data.csv')
+dataset.to_csv('DJIA_close_price_pandemic_data.csv')
 
 """
 """
 We import the dataframe containing the adjusted closing prices for all the companies in the DJIA index:
 """
-dataset = read_csv('DJI_close_price_pandemic_data.csv',index_col=0,parse_dates=True)
+dataset = read_csv('DJIA_close_price_pandemic_data.csv',index_col=0,parse_dates=True)
 
 # 3. Exploratory Data Analysis
 # 3.1. Descriptive Statistics
