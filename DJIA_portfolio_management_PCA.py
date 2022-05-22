@@ -97,7 +97,7 @@ than 30% missing values. One stocks fit this criteria — Dow Chemicals:
 missing_fractions = dataset.isnull().mean().sort_values(ascending=False)
 print('Missing values \n',missing_fractions.head(10))
 
-drop_list = sorted(list(missing_fractions[missing_fractions > 0.5].index))
+drop_list = sorted(list(missing_fractions[missing_fractions > 0.3].index))
 dataset.drop(labels=drop_list, axis=1, inplace=True)
 print('dataset shape \n',dataset.shape)
 
